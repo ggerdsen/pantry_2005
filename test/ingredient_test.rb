@@ -31,4 +31,8 @@ class IngredientTest < Minitest::Test
     assert_instance_of Pantry, @pantry
   end
 
+  def test_pantry_gets_ingredients
+    assert_equal 0, @pantry.stock_check(@ingredient1)
+  end
+
 end
