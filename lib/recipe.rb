@@ -11,9 +11,7 @@ class Recipe
         @ingredients_required[ingredient] += amount
   end
 
-  def ingredients
-    @ingredients_required.keys
-  end
+
 
   def total_calories
     total = 0

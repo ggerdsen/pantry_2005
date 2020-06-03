@@ -33,8 +33,6 @@ class IngredientTest < Minitest::Test
   end
 
   def test_pantry_gets_ingredients
-    # binding.pry
-    # assert_equal {}, @pantry.stock
     assert_equal 0, @pantry.stock_check(@ingredient1)
   end
 
