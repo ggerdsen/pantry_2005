@@ -3,6 +3,7 @@ require 'minitest/pride'
 require './lib/ingredient'
 require './lib/pantry'
 require './lib/recipe'
+require './lib/cook_book'
 require 'pry'
 
 class RecipeTest < Minitest::Test
@@ -37,6 +38,8 @@ class RecipeTest < Minitest::Test
     assert_equal [@ingredient1, @ingredient2], @recipe1.ingredients
   end
 
-  de
+  def test_it_exists
+    assert_instance_of CookBook, @cookbook
+  end
 
 end
