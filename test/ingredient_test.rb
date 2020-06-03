@@ -13,4 +13,8 @@ class IngredientTest < Minitest::Test
     assert_instance_of Ingredient, @ingredient1
   end
 
+  def 
+
+  end
+
 end
