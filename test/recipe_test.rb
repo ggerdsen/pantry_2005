@@ -2,6 +2,7 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require './lib/ingredient'
 require './lib/pantry'
+require './lib/recipe'
 require 'pry'
 
 class RecipeTest < Minitest::Test
@@ -16,6 +17,12 @@ class RecipeTest < Minitest::Test
     assert_instance_of Ingredient, @ingredient1
     assert_instance_of Ingredient, @ingredient2
   end
+
+  def test_it_has_a_name
+    assert_equal "Mac and Cheese", @recipe1.name
+  end
+
+  def
 
 
 end
